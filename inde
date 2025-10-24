@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./assests/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg w-100 p-3">
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="./assests/images/22a9103a0f090c245e552b3c707fc1fbc871c2e6.png"
+                alt="logo"
+              />
+              <p class="mb-0 fw-semibold">Our Services</p>
+            </div>
+
+            <!-- Hamburger button -->
+            <button
+              class="btn d-lg-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navSidebar"
+            >
+              <i class="bi bi-list fs-3"></i>
+            </button>
+
+            <!-- Links (desktop only) -->
+            <div class="d-none d-lg-flex align-items-center gap-4">
+              <a href="#" class="text-decoration-none text-dark">About</a>
+              <a href="#" class="text-decoration-none text-dark">Blog & News</a>
+              <a href="#" class="text-decoration-none text-dark">Contact</a>
+            </div>
+
+            <!-- Account section (desktop only) -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <p class="mb-0">Account</p>
+              <p class="mb-0 text-muted">|</p>
+              <p class="mb-0"><i class="bi bi-telephone"></i> +2349067322844</p>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Sidebar (offcanvas) -->
+        <div
+          class="offcanvas offcanvas-end bg-light"
+          tabindex="-1"
+          id="navSidebar"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column gap-4">
+            <a href="#" class="text-decoration-none text-dark fs-5">About</a>
+            <a href="#" class="text-decoration-none text-dark fs-5"
+              >Blog & News</a
+            >
+            <a href="#" class="text-decoration-none text-dark fs-5">Contact</a>
+            <hr />
+            <p class="fw-semibold mb-1">Account</p>
+            <p class="mb-0"><i class="bi bi-telephone"></i> +2349067322844</p>
+          </div>
+        </div>
+        <!--hero section-->
+        <div
+          class="hero-section my-4 d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center gap-4"
+        >
+          <div class="hero-text-content d-flex flex-column gap-4">
+            <p class="main-title">Premium Web Hosting for Your Website</p>
+            <p class="desc">
+              Blazing fast web hosting for individuals and businesses of all
+              sizes backed by 24x7x365 Support.
+            </p>
+            <div class="d-flex hero-buttons flex-md-row flex-column gap-4">
+              <button class="button-main">Create an Account</button>
+              <button class="button-outline">Choose your plan</button>
+            </div>
+          </div>
+          <div
+            class="d-flex hero-img-contnet align-items-center justify-content-center"
+          >
+            <img src="./assests/images/Group 6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container d-flex flex-column gap-4">
+        <div
+          class="web-hosting-section d-flex justify-content-center gap-4 py-4 my-4 flex-md-row flex-column"
+        >
+          <div class="web-hosting-content-text">
+            <p class="main">True Cloud Web Hosting</p>
+            <p class="desc">
+              True Cloud Web Hosting All of the hosting packages we offer are
+              deployed instantly on our SSD powered cloud. We don’t use
+              dedicated servers that operate on single pieces of hardware. Our
+              entire infrastructure is built to be reliable, secure, and
+              scalable.
+            </p>
+          </div>
+          <div
+            class="web-hosting-content-images d-flex align-items-center justify-content-center gap-2 flex-wrap"
+          >
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img
+                src="./assests/images/229b0218a868fbe681467362354c3e064536a200.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img
+                src="./assests/images/34f2e1ca5cfbd82a0546283bfa3cd84716c8278e.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img
+                src="./assests/images/467dd73fafd39ed92be9b3b73096b7280d3f9589.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img
+                src="./assests/images/4fab9aefa90340b5c455bf04e7bea348b15302c7.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img
+                src="./assests/images/909ad74e0c35be25613d26962292b35fcc34f64a.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/litespeed-logo 1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="cards-swiper-section d-flex py-4 my-4">
+          <div class="swiper">
+            <div class="swiper-wrapper bg-body gap-3">
+              <div
+                class="swiper-slide d-flex flex-column align-items-center justify-content-center gap-2"
+              >
+                <img src="./assests/images/icn1 1.png" alt="" />
+                <p class="title">99.9% Uptime</p>
+                <p class="desc">
+                  We Keep Your Web build Online 24x7x365. Downtime not only
+                  costs you lost visitors but also damages your reputation and
+                  search engine rankings.
+                </p>
+              </div>
+              <div
+                class="swiper-slide d-flex flex-column align-items-center align-content-center gap-2"
+              >
+                <img src="./assests/images/Icon.png" alt="" />
+                <p class="title">Blazing Fast Web Hosting</p>
+                <p class="desc">
+                  We Keep Your Web build Online 24x7x365. Downtime not only
+                  costs you lost visitors but also damages your reputation and
+                  search engine rankings.
+                </p>
+              </div>
+              <div
+                class="swiper-slide d-flex flex-column align-items-center justify-content-center gap-2"
+              >
+                <img src="./assests/images/icn4 1.svg" alt="" />
+                <p class="title">Free SSL Certificates</p>
+                <p class="desc">
+                  We Keep Your Web build Online 24x7x365. Downtime not only
+                  costs you lost visitors but also damages your reputation and
+                  search engine rankings.
+                </p>
+              </div>
+              <div
+                class="swiper-slide d-flex flex-column align-items-center justify-content-center gap-2"
+              >
+                <img src="./assests/images/7 Icon.png" alt="" />
+                <p class="title">24x7 Friendly Support</p>
+                <p class="desc">
+                  We Keep Your Web build Online 24x7x365. Downtime not only
+                  costs you lost visitors but also damages your reputation and
+                  search engine rankings.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-navigation swiper-button-prev">
+              <img src="./assests/images/Icon (1).png" alt="" />
+            </div>
+            <div class="swiper-navigation swiper-button-next">
+              <img src="./assests/images/Icon2.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="package-section d-flex flex-column align-items-center">
+          <p class="title">Ready to get started with Lemon Wares?</p>
+          <p class="desc">Choose the package that suits you</p>
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Monthly</label
+            >
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckDefault"
+              />
+            </div>
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Yearly</label
+            >
+            <p class="sale">20% discount</p>
+          </div>
+          <div
+            class="tabs d-flex align-items-center justify-content-between py-4 my-4"
+          >
+            <div
+              class="tab-item d-flex align-items-center justify-content-center"
+            >
+              <p>Basic</p>
+            </div>
+            <div
+              class="tab-item active d-flex align-items-center justify-content-center"
+            >
+              <p>Premium</p>
+            </div>
+          </div>
+          <div
+            class="cards-tabs d-flex flex-wrap align-items-center justify-content-center gap-5"
+          >
+            <div class="card-tabs d-flex flex-column align-items-start">
+              <p class="title">Starter</p>
+              <p class="desc">
+                with all your customers via all conversation channels in one
+                central dashboard.
+              </p>
+              <p class="price">$2.80</p>
+              <button class="button-outline">Choose your plan</button>
+              <div class="card-list d-flex flex-column gap-2 my-2">
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>15 Email Accounts
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Unlimited Databases
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2 Websitess
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Free SSL
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>1 Parked Domains
+                </p>
+              </div>
+            </div>
+            <div class="card-tabs d-flex flex-column align-items-start">
+              <p class="title">Starter</p>
+              <p class="desc">
+                with all your customers via all conversation channels in one
+                central dashboard.
+              </p>
+              <p class="price">$2.80</p>
+              <button class="button-outline">Choose your plan</button>
+              <div class="card-list d-flex flex-column gap-2 my-2">
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>15 Email Accounts
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Unlimited Databases
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2 Websitess
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Free SSL
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>1 Parked Domains
+                </p>
+              </div>
+            </div>
+            <div class="card-tabs d-flex flex-column align-items-start">
+              <p class="title">Starter</p>
+              <p class="desc">
+                with all your customers via all conversation channels in one
+                central dashboard.
+              </p>
+              <p class="price">$2.80</p>
+              <button class="button-outline">Choose your plan</button>
+              <div class="card-list d-flex flex-column gap-2 my-2">
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>15 Email Accounts
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Unlimited Databases
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2GB SSD
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>2 Websitess
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>Free SSL
+                </p>
+                <p class="d-flex align-items-center gap-4">
+                  <i class="bi bi-check-lg"></i>1 Parked Domains
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stories-section py-5 my-5 row justify-content-center gap-4">
+          <div
+            class="col-lg-5 col-10 stories-part d-flex flex-column justify-content-center gap-2"
+          >
+            <div
+              class="text-content d-flex align-items-start align-self-end flex-column position-relative"
+            >
+              <p class="main">Real stories from real customers</p>
+              <p class="desc">get inspired by these stories.</p>
+              <div class="position-absolute marker">
+                <img src="./assests/images/Quote Mark.png" alt="" />
+              </div>
+            </div>
+            <div class="card-one align-self-end">
+              <div class="d-flex image-content my-2">
+                <img src="./assests/images/web3.png" alt="" />
+              </div>
+              <div
+                class="text position-relative d-flex flex-column justify-content-center gap-2"
+              >
+                <div class="d-flex position-absolute marker-text">
+                  <img src="./assests/images/Quote Mark2.png" alt="" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magna
+                  fringilla urna, porttitor rhoncus dolor purus non enim
+                  praesent elem
+                </p>
+                <div class="info-person">
+                  <p class="name">floyd miles</p>
+                  <p class="job">ceo .cli</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-10 stories-part d-flex flex-column justify-content-center gap-5"
+          >
+            <div class="card-two">
+              <div class="d-flex image-content my-2">
+                <img src="./assests/images/web5.png" alt="" />
+              </div>
+              <div
+                class="text position-relative d-flex flex-column justify-content-center gap-2"
+              >
+                <div class="d-flex position-absolute marker-text">
+                  <img src="./assests/images/Quote Mark2.png" alt="" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magna
+                  fringilla urna, porttitor rhoncus dolor purus non enim
+                  praesent elem
+                </p>
+                <div class="info-person">
+                  <p class="name">floyd miles</p>
+                  <p class="job">ceo .jpnl</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-three">
+              <div class="d-flex image-content my-2">
+                <img src="./assests/images/web2.png" alt="" />
+              </div>
+              <div
+                class="text position-relative d-flex flex-column justify-content-center gap-2"
+              >
+                <div class="d-flex position-absolute marker-text">
+                  <img src="./assests/images/Quote Mark2.png" alt="" />
+                </div>
+                <p>LemonWares saved our time in Hosting my company page.</p>
+                <div class="info-person">
+                  <p class="name">floyd miles</p>
+                  <p class="job">ceo leevon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="website-section d-flex align-items-center justify-content-center gap-4 py-4 my-4 flex-md-row flex-column"
+        >
+          <div class="website-content-text">
+            <p class="main">We serve over 100 Nigerian Websites</p>
+            <p class="desc">
+              Connect LemonWares with your favourite tools that you use daily
+              and keep things on track.
+            </p>
+          </div>
+          <div
+            class="website-content-images d-flex align-items-center justify-content-center gap-2 flex-wrap"
+          >
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web5.png" alt="" />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web6.png" alt="" />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web4.png" alt="" />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web2.png" alt="" />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web1.png" alt="" />
+            </div>
+            <div
+              class="d-flex img-card align-items-center justify-content-center"
+            >
+              <img src="./assests/images/web3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="answer-section mt-4 position-relative d-flex flex-column gap-5 align-items-center justify-content-center"
+        >
+          <div class="trangle-top position-absolute"></div>
+          <div class="title">We're here to make your website awesome.</div>
+          <button
+            class="button-main d-flex gap-2 align-items-center justify-content-center"
+          >
+            <i class="bi bi-whatsapp"></i>Get in touch with us
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="py-5 px-4">
+      <div class="container d-flex flex-wrap justify-content-between gap-4">
+        <div class="footer-logo d-flex flex-column">
+          <img src="./assests/images/logo2.png" alt="Logo" class="mb-3" />
+          <p class="mb-3 small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna.
+          </p>
+          <div class="icons d-flex gap-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links d-flex flex-wrap justify-content-between">
+          <div class="footer-col">
+            <h6 class="mb-3">Service</h6>
+            <ul class="list-unstyled d-flex flex-column gap-4">
+              <li>
+                <a href="#" class="text-decoration-none">Domain</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Shared Hosting</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Cloud Hosting</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Private Hosting</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6 class="mb-3">Hosting</h6>
+            <ul class="list-unstyled d-flex flex-column gap-4">
+              <li>
+                <a href="#" class="text-decoration-none">Cheap Hosting</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Hosting Wordpress</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Email Hosting</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Hosting Unlimited</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6 class="mb-3">Company</h6>
+            <ul class="list-unstyled d-flex flex-column gap-4">
+              <li>
+                <a href="#" class="text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Career</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6 class="mb-3">Help</h6>
+            <ul class="list-unstyled d-flex flex-column gap-4">
+              <li>
+                <a href="#" class="text-decoration-none">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Help support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="pt-3 copyright">Copyrights 2025, All rights reserved</div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+</html>
