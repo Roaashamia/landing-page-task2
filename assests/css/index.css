@@ -324,6 +324,16 @@ button {
   margin: 0 auto;
 }
 
+#btnLang {
+  color: black;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.tabs-monthly,
+.tabs-yearly {
+  width: 80%;
+}
 .stories-section {
   max-width: 100%;
 }

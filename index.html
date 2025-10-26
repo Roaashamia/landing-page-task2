@@ -38,16 +38,11 @@
                 alt="logo"
               />
             </div>
-            <p class="services">Our Services</p>
+            <p class="services">
+              <span data-lang="en">Our Services</span>
+              <span data-lang="ar" class="d-none">خدماتنا</span>
+            </p>
           </div>
-          <button
-            class="btn d-lg-none border-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navSidebar"
-          >
-            <i class="bi bi-list fs-3"></i>
-          </button>
 
           <div
             class="links d-none d-lg-flex align-items-center justify-content-center gap-4"
@@ -62,6 +57,25 @@
             <p>Account</p>
             <p>|</p>
             <p><i class="bi bi-telephone"></i> +2349067322844</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center p-0">
+            <button
+              id="btnLang"
+              onclick="toggleLang()"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              class="btn border-0"
+            >
+              <i class="bi bi-globe"></i>
+            </button>
+            <button
+              class="btn d-lg-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navSidebar"
+            >
+              <i class="bi bi-list fs-3"></i>
+            </button>
           </div>
           <div
             class="offcanvas offcanvas-end bg-light"
@@ -105,14 +119,31 @@
           class="hero-section my-4 d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center gap-4"
         >
           <div class="hero-text-content d-flex flex-column gap-4">
-            <p class="main-title">Premium Web Hosting for Your Website</p>
+            <p class="main-title">
+              <span data-lang="en"> Premium Web Hosting for Your Website </span>
+              <span data-lang="ar" class="d-none"
+                >استضافة ويب مميزة لموقعك الإلكتروني</span
+              >
+            </p>
             <p class="desc">
-              Blazing fast web hosting for individuals and businesses of all
-              sizes backed by 24x7x365 Support.
+              <span data-lang="en"
+                >Blazing fast web hosting for individuals and businesses of all
+                sizes backed by 24x7x365 Support.</span
+              >
+              <span data-lang="ar" class="d-none"
+                >استضافة ويب فائقة السرعة للأفراد والشركات من جميع الأحجام، مع
+                دعم فني على مدار الساعة طوال أيام الأسبوع.</span
+              >
             </p>
             <div class="d-flex hero-buttons flex-md-row flex-column gap-4">
-              <button class="button-main">Create an Account</button>
-              <button class="button-outline">Choose your plan</button>
+              <button class="button-main">
+                <span data-lang="en">Create an Account</span>
+                <span data-lang="ar" class="d-none">إنشاء حساب</span>
+              </button>
+              <button class="button-outline">
+                <span data-lang="en">Choose your plans</span>
+                <span data-lang="ar" class="d-none">اختر خطتك</span>
+              </button>
             </div>
           </div>
           <div
@@ -287,253 +318,393 @@
             >
             <p class="sale">20% discount</p>
           </div>
-          <div
-            class="tabs d-flex align-items-center justify-content-between py-4 my-4"
-          >
+          <div class="tabs-monthly d-flex flex-column align-items-center">
             <div
-              class="tab-item basic-item d-flex align-items-center justify-content-center"
+              class="tabs w-100 d-flex align-items-center justify-content-between py-4 my-4"
             >
-              <p>Basic</p>
+              <div
+                class="tab-item active basic-item-monthly d-flex align-items-center justify-content-center"
+              >
+                <p>Basic</p>
+              </div>
+              <div
+                class="tab-item premium-item-monthly d-flex align-items-center justify-content-center"
+              >
+                <p>Premium</p>
+              </div>
             </div>
             <div
-              class="tab-item active premium-item d-flex align-items-center justify-content-center"
+              class="cards-tabs premium-monthly d-none flex-wrap align-items-center justify-content-center gap-5"
             >
-              <p>Premium</p>
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
+                </p>
+                <p class="price">$12.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
+              </div>
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
+                </p>
+                <p class="price">$12.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cards-tabs basic-monthly d-flex flex-wrap align-items-center justify-content-center gap-5"
+            >
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
+                </p>
+                <p class="price">$2.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>15 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>12 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>1 Parked Domains
+                  </p>
+                </div>
+              </div>
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
+                </p>
+                <p class="price">$2.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>15 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>12 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>1 Parked Domains
+                  </p>
+                </div>
+              </div>
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
+                </p>
+                <p class="price">$2.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>15 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>12 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>1 Parked Domains
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="cards-tabs basic d-none d-flex flex-wrap align-items-center justify-content-center gap-5"
-          >
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$2.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
+          <div class="tabs-yearly d-none flex-column align-items-center">
+            <div
+              class="tabs w-100 d-flex align-items-center justify-content-between py-4 my-4"
+            >
+              <div
+                class="tab-item basic-item-yearly d-flex align-items-center justify-content-center"
+              >
+                <p>Basic</p>
+              </div>
+              <div
+                class="tab-item active premium-item-yearly d-flex align-items-center justify-content-center"
+              >
+                <p>Premium</p>
               </div>
             </div>
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$2.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
+            <div
+              class="cards-tabs basic-yearly d-none d-flex flex-wrap align-items-center justify-content-center gap-5"
+            >
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
                 </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
+                <p class="price">$12.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
+              </div>
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
                 </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
+                <p class="price">$12.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$2.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
+            <div
+              class="cards-tabs premium-yearly d-flex flex-wrap align-items-center justify-content-center gap-5"
+            >
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
                 </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
+                <p class="price">$22.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="cards-tabs premium d-flex flex-wrap align-items-center justify-content-center gap-5"
-          >
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$5.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
+              <div class="card-tabs d-flex flex-column align-items-start">
+                <p class="title">Starter</p>
+                <p class="desc">
+                  with all your customers via all conversation channels in one
+                  central dashboard.
                 </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
-              </div>
-            </div>
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$6.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
-              </div>
-            </div>
-            <div class="card-tabs d-flex flex-column align-items-start">
-              <p class="title">Starter</p>
-              <p class="desc">
-                with all your customers via all conversation channels in one
-                central dashboard.
-              </p>
-              <p class="price">$9.80</p>
-              <button class="button-outline">Choose your plan</button>
-              <div class="card-list d-flex flex-column gap-2 my-2">
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>15 Email Accounts
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Unlimited Databases
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2GB SSD
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>2 Websitess
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>Free SSL
-                </p>
-                <p class="d-flex align-items-center gap-4">
-                  <i class="bi bi-check-lg"></i>1 Parked Domains
-                </p>
+                <p class="price">$22.80</p>
+                <button class="button-outline">Choose your plan</button>
+                <div class="card-list d-flex flex-column gap-2 my-2">
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>300 Email Accounts
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Unlimited Databases
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>4GB SSD
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>20 Websitess
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>Free SSL
+                  </p>
+                  <p class="d-flex align-items-center gap-4">
+                    <i class="bi bi-check-lg"></i>3 Parked Domains
+                  </p>
+                </div>
               </div>
             </div>
           </div>
