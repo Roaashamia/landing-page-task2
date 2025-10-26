@@ -258,6 +258,7 @@ button {
   border-bottom: 2px solid var(--secondary-text);
   padding: 0;
   flex-basis: 50%;
+  cursor: pointer;
 }
 .tab-item.active {
   border-bottom: 3px solid var(--main-btn);

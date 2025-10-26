@@ -22,3 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 });
+
+
+basicElements = document.querySelector('.basic');
+basicElement = document.querySelector('.basic-item');
+premiumElement = document.querySelector('.premium-item');
+premiumElements = document.querySelector('.premium');
+basicElement.addEventListener("click", function (e) {
+    premiumElement.classList.remove('active');
+    basicElement.classList.add('active');
+    premiumElements.classList.add('d-none');
+    premiumElements.classList.remove('d-flex');
+    basicElements.classList.remove('d-none');
+    basicElements.classList.add('d-flex');
+});
+premiumElement.addEventListener("click", function (e) {
+    premiumElement.classList.add('active');
+    basicElement.classList.remove('active');
+
+    premiumElements.classList.remove('d-none');
+    premiumElements.classList.add('d-flex');
+    basicElements.classList.remove('d-flex');
+    basicElements.classList.add('d-none');
+});
+
