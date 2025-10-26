@@ -39,7 +39,6 @@ basicElement.addEventListener("click", function (e) {
 premiumElement.addEventListener("click", function (e) {
     premiumElement.classList.add('active');
     basicElement.classList.remove('active');
-
     premiumElements.classList.remove('d-none');
     premiumElements.classList.add('d-flex');
     basicElements.classList.remove('d-flex');

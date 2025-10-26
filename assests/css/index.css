@@ -85,11 +85,22 @@ button {
   background-color: var(--main-text);
   color: var(--white);
 }
+.hero-text-content {
+  width: 50%;
+}
 .hero-img-contnet {
-  max-width: 90%;
+  max-width: 100%;
+  width: 50%;
 }
 .hero-img-contnet img {
   max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .hero-img-contnet,
+  .hero-text-content {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   button {
@@ -143,25 +154,7 @@ button {
   max-width: 100%;
   width: 180px;
 }
-@media (max-width: 992px) {
-  .web-hosting-content-text .desc,
-  .website-content-text .desc {
-    max-width: 95%;
-  }
-  .website-content-text .main,
-  .web-hosting-content-text .main {
-    max-width: 95%;
-  }
-}
 
-@media (max-width: 768px) {
-  .web-hosting-content-images,
-  .website-content-images,
-  .website-content-text,
-  .web-hosting-content-text {
-    flex-basis: 85%;
-  }
-}
 .cards-swiper-section {
   max-width: 90%;
   margin: 0 auto;
@@ -226,6 +219,7 @@ button {
   text-align: center;
   padding: 0 20px;
 }
+
 .form-check-input {
   width: 60px !important;
   height: 30px !important;
@@ -262,6 +256,31 @@ button {
 }
 .tab-item.active {
   border-bottom: 3px solid var(--main-btn);
+}
+@media (max-width: 992px) {
+  .web-hosting-content-text .desc,
+  .website-content-text .desc {
+    max-width: 95%;
+  }
+  .website-content-text .main,
+  .web-hosting-content-text .main {
+    max-width: 95%;
+  }
+  .package-section .title {
+    width: 100%;
+  }
+  .tabs {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .web-hosting-content-images,
+  .website-content-images,
+  .website-content-text,
+  .web-hosting-content-text {
+    flex-basis: 85%;
+  }
 }
 .card-tabs {
   width: 300px;
