@@ -179,7 +179,7 @@ button {
 .swiper-slide .desc {
   color: var(--main-text);
   font-weight: 300;
-  width: 60%;
+  width: 75%;
   font-size: 13px;
 }
 .swiper-navigation {
@@ -272,6 +272,9 @@ button {
   .tabs {
     width: 80%;
   }
+  .swiper-slide .desc {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -348,6 +351,7 @@ button {
 .stories-section .marker {
   top: -80px;
   inset-inline-start: -100px;
+  z-index: -1;
 }
 .stories-section .marker img {
   max-width: 100%;

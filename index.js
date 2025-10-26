@@ -28,7 +28,7 @@ basicElements = document.querySelector('.basic');
 basicElement = document.querySelector('.basic-item');
 premiumElement = document.querySelector('.premium-item');
 premiumElements = document.querySelector('.premium');
-basicElement.addEventListener("click", function (e) {
+basicElement.addEventListener("click", function () {
     premiumElement.classList.remove('active');
     basicElement.classList.add('active');
     premiumElements.classList.add('d-none');
@@ -36,7 +36,7 @@ basicElement.addEventListener("click", function (e) {
     basicElements.classList.remove('d-none');
     basicElements.classList.add('d-flex');
 });
-premiumElement.addEventListener("click", function (e) {
+premiumElement.addEventListener("click", function () {
     premiumElement.classList.add('active');
     basicElement.classList.remove('active');
     premiumElements.classList.remove('d-none');
